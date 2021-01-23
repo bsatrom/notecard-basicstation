@@ -1,0 +1,3 @@
+[submodule "basicstation"]
+	path = basicstation
+	url = git@github.com:bsatrom/basicstation.git
