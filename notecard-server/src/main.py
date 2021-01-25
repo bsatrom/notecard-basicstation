@@ -49,13 +49,14 @@ def baseToBytes(payload):
 
 async def addNote(websocket, path):
     async for message in websocket:
-        req = {"req": "note.add"}
-        req["body"] = base64ToBody(message)
-        req["payload"] = message
-        req["sync"] = True
-        card.Transaction(req)
+        print(f'New MSG: {message}')
+        # req = {"req": "note.add"}
+        # req["body"] = base64ToBody(message)
+        # req["payload"] = message
+        # req["sync"] = True
+        # card.Transaction(req)
 
-        await websocket.send("Note added")
+        # await websocket.send("Note added")
 
 start_server = websockets.serve(addNote, "notecard-server", 8765)
 
