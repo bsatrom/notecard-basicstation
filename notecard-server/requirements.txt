@@ -1,4 +1,4 @@
 python-periphery==2.0.1
 filelock==3.0.12
 note-python==1.2.1
-websockets==8.1
+websockets==9.1
